@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { useAppState } from './context/AppContext';
+import PlatformLayout from './PlatformLayout';
 
 const PrivateRoute: FunctionComponent = ({ children, path }) => {
   const { user } = useAppState();
@@ -21,7 +22,9 @@ const PrivateRoute: FunctionComponent = ({ children, path }) => {
 
   return (
     <Route path={path} exact>
-      {children}
+      <PlatformLayout>
+        {children}
+      </PlatformLayout>
     </Route>
   );
 };

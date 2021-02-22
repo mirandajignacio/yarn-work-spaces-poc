@@ -13,11 +13,11 @@ const Profile: FunctionComponent = () => {
   return (
     <div>
       Profile
-      {/* <pre>
+      <pre>
         <code>
           {JSON.stringify(user, null, 4)}
         </code>
-      </pre> */}
+      </pre>
       <button type="button" onClick={handleSignOut}>signout</button>
     </div>
   );

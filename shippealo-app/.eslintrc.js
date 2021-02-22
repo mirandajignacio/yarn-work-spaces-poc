@@ -43,7 +43,7 @@ module.exports = {
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
     'react/require-default-props': 'off',
-    'jsx-a11y/anchor-is-valid': ['warn', {
+    'jsx-a11y/anchor-is-valid': ['off', {
       components: ['Link'],
       specialLink: ['hrefLeft', 'hrefRight'],
       aspects: ['noHref', 'invalidHref', 'preferButton'],
