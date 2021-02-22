@@ -20,6 +20,10 @@ const App: FunctionComponent = () => {
           <Auth />
         </Route>
 
+        <Route path="/perfil/:mote" exact>
+          <Profile />
+        </Route>
+
         <PrivateRoute path="/perfil">
           <Profile />
         </PrivateRoute>
