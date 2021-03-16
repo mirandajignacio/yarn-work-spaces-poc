@@ -1,3 +1,4 @@
 export default {
-  miau: 'miau'
+  miau: 'miau',
+  data: 'lol'
 }
